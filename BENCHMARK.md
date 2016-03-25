@@ -1,5 +1,5 @@
 ```
-$ ab -n 1000 -c 10 http://0.0.0.0:3000/ciudades
+libre (master) $ ab -n 1000 -c 10 http://0.0.0.0:3000/ciudades
 This is ApacheBench, Version 2.3 <$Revision: 655654 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -23,35 +23,35 @@ Server Hostname:        0.0.0.0
 Server Port:            3000
 
 Document Path:          /ciudades
-Document Length:        525 bytes
+Document Length:        395 bytes
 
 Concurrency Level:      10
-Time taken for tests:   19.570 seconds
+Time taken for tests:   6.444 seconds
 Complete requests:      1000
 Failed requests:        0
 Write errors:           0
-Total transferred:      971000 bytes
-HTML transferred:       525000 bytes
-Requests per second:    51.10 [#/sec] (mean)
-Time per request:       195.703 [ms] (mean)
-Time per request:       19.570 [ms] (mean, across all concurrent requests)
-Transfer rate:          48.45 [Kbytes/sec] received
+Total transferred:      848000 bytes
+HTML transferred:       395000 bytes
+Requests per second:    155.19 [#/sec] (mean)
+Time per request:       64.437 [ms] (mean)
+Time per request:       6.444 [ms] (mean, across all concurrent requests)
+Transfer rate:          128.52 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.3      0       7
-Processing:    44  194  17.3    190     382
-Waiting:       44  193  16.9    188     379
-Total:         44  195  17.3    190     382
+Connect:        0    0   0.2      0       3
+Processing:    24   64   9.7     62     151
+Waiting:       20   63   9.7     60     150
+Total:         25   64   9.8     62     151
 
 Percentage of the requests served within a certain time (ms)
-  50%    190
-  66%    193
-  75%    198
-  80%    202
-  90%    221
-  95%    229
-  98%    233
-  99%    236
- 100%    382 (longest request)
+  50%     62
+  66%     63
+  75%     65
+  80%     65
+  90%     70
+  95%     90
+  98%    101
+  99%    102
+ 100%    151 (longest request)
 ```
